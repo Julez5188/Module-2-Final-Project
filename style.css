@@ -219,7 +219,7 @@ p {
 .row__narrow {
   width: 100%;
   max-width: 1024px;
-  margin: 0 auto;
+  margin: 0px auto;
 }
 
 .section__tag {
@@ -258,6 +258,7 @@ p {
 .feature__img--wrapper {
   display: flex;
   padding: 20px;
+  border-width: 1px;
   border: 1px solid #e5e7eb;
   border-radius: 500px;
 }
