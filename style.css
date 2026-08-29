@@ -267,3 +267,15 @@ p {
   width: 24px;
   height: 24px;
 }
+
+/* DISPLAY FOR SMALL PHONES TABLETS LARGE PHONES */
+
+@media (max-width: 1024px){
+  .features {
+    max-width: 768px;
+  }
+
+  .feature {
+    width: calc(50%);
+  }
+}
