@@ -169,7 +169,13 @@ img {
   border-color: rgb(229, 231, 235);
   border-image: none;
   border-radius: 8px;
-  transition: 300ms;
+  transition: 300ms ease;
+}
+
+.menu--open .menu {
+  visibility: visible;
+  opacity: 1;
+  transform: translateX(0);
 }
 
 .btn__menu--close {
@@ -194,6 +200,16 @@ img {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.menu__link {
+  color: #1a202c;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.5;
+  margin: 8PX 0;
+  padding-bottom: 4px;
+  border-bottom: 2px solid transparent;
 }
 
 /* HEADER SECTION */
@@ -426,7 +442,32 @@ h1 {
   line-height: 2;
 }
 
+/*  VALUES SECTION */
+
+
+
 /* DISPLAY FOR SMALL PHONES TABLETS LARGE PHONES */
+
+@media (max-width: 1280px) {
+  h1 {
+    font-size: 36px;
+    color: #1a202c;
+    line-height: 1.25;
+  }
+
+  .header__description--para {
+    font-size: 16px;
+  }
+
+  .header__img--wrapper {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .header__img {
+    max-width: 512px;
+  }
+}
 
 @media (max-width: 1024px){
 .nav__links {
@@ -435,6 +476,34 @@ h1 {
 
 .btn__menu {
   display: block;
+}
+
+header .row {
+  flex-direction: column;
+  align-items: center;
+}
+
+.header__description {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header__description,
+.header__img--wrapper {
+  width: 100%;
+  max-width: 512px;
+  margin: 0 auto;
+}
+
+.header__customers--title,
+.header__img--wrapper {
+  margin-top: 48px;
+}
+
+h1 {
+  font-size: 30px;
 }
 
   .features {

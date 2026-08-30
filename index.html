@@ -5,6 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Treact</title>
   <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/8c2874cba0.js" crossorigin="anonymous"></script>
+  <script src="index.js"></script>
 </head>
 
 <body>
@@ -23,12 +25,15 @@
           <a href="#about" class="nav__link">Login</a>
           <a href="#" class="nav__link nav__link--primary">Start Now</a>
         </div>
-        <div class="btn__menu">
-        </div>
+        <button class="btn__menu" onclick="openMenu()">
+          <i class="fa-solid fa-bars"></i>
+        </button>
       </div>
     </nav>
     <div class="menu">
-      <button class="btn__menu btn__menu--close"></button>
+      <button class="btn__menu btn__menu--close" onclick="closeMenu()">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
       <div class="menu__links">
       <a href="#about" class="menu__link">About</a>
       <a href="#blog" class="menu__link">Blog</a>
@@ -188,6 +193,39 @@
                 </div>
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+      <section id="values">
+        <div class="container">
+          <div class="row">
+            <div class="values_description">
+              <div class="section__tag">VALUES</div>
+              <h2 class="section__title">We Always Abide by Our <span class="purple">Principals</span></h2>
+              <div class="section__para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima sequi obcaecati sit? Sunt perspiciatis cumque beatae quidem placeat sit. Eius numquam veniam, dolorum alias tenetur assumenda rem hic doloremque vitae.</div>
+              <div class="values__list">
+                <div class="value">
+                  <div class="value__title">
+                    <figure>
+                      <i class="fa-solid fa-dollar-sign"></i>
+                    </figure>
+                    <div class="value__name">Affordable</div>
+                  </div>
+                  <div class="value__para">We promise to offer you the best rate we can - at par with the industry standard.</div>
+                </div>
+                <div class="value">
+                  <div class="value__title">
+                    <figure>
+                      <i class="fa-solid fa-suitcase"></i>
+                    </figure>
+                    <div class="value__name">Professionalism</div>
+                  </div>
+                  <div class="value__para">We assure you that our templates are designed and created by professional designers.</div>
+                </div>
+              </div>
+              <button class="btn">Learn More</button>
+            </div>
+            <img class="values__img" src="./assets/prototype-illustration.21bc4b3f612a2f257c3d361067582485.svg">
           </div>
         </div>
       </section>
