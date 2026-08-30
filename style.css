@@ -317,7 +317,8 @@ h1 {
   margin: 0px auto;
 }
 
-#features .section__title {
+#features .section__title,
+#pricing .section__title {
   text-align: center;
 }
 
@@ -535,6 +536,27 @@ h1 {
   margin-top: 48px;
 }
 
+/* PRICING SECTION */
+
+#pricing .row {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#pricing .section__para {
+  max-width: 576px;
+  text-align: center;
+}
+
+.plans {
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+}
+
 /* DISPLAY FOR SMALL PHONES TABLETS LARGE PHONES */
 
 @media (max-width: 1280px) {
@@ -565,6 +587,10 @@ h1 {
 
 .btn__menu {
   display: block;
+}
+
+.section__para {
+  font-size: 16px;
 }
 
 header .row {
@@ -610,5 +636,15 @@ h1 {
 
   .section__title {
     font-size: 36px;
+  }
+
+  #features .section__title,
+  #pricing .section__title {
+    font-size: 48px;
+  }
+
+  .plans {
+    flex-direction: column;
+    align-items: center;
   }
 }
