@@ -685,6 +685,44 @@ h1 {
   border-radius: 999px;
 }
 
+.plan:nth-child(2) {
+  background: linear-gradient(
+    135deg,
+    rgb(76, 81, 191) 0%,
+    rgb(102, 126, 234) 100%
+  );
+}
+
+.plan:nth-child(2) .plan__name,
+.plan:nth-child(2) .plan__price,
+.plan:nth-child(2) .plan__target,
+.plan:nth-child(2) .plan__duration,
+.plan:nth-child(2) .plan__feature {
+  color: #f7fafc;
+}
+
+.plan:nth-child(2) .plan__middle {
+  border-top: 2px solid rgb(102, 126, 234);
+  border-bottom: 2px solid rgb(102, 126, 234);
+}
+
+.plan:nth-child(2) .plan__button {
+  color: #6415ff;
+  background-color: #f7fafc;
+}
+
+.plan:nth-child(3) .plan__stripe,
+.plan:nth-child(3) .plan__button {
+  color: #f7fafc;
+  background: linear-gradient(
+    115deg,
+    rgb(245, 101, 101) 0%,
+    rgb(254, 178, 178) 100%
+  );
+}
+
+/* START SECTION */
+
 /* DISPLAY FOR SMALL PHONES TABLETS LARGE PHONES */
 
 @media (max-width: 1280px) {
@@ -782,5 +820,29 @@ h1 {
 
   .plan {
     margin-right: 0px;
+  }
+
+  .plan {
+    margin-right: 0px;
+  }
+
+  #start .container {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+
+  #start .row {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .start__container {
+    padding: 96px 0;
+    width: 100%;
+    background-color: rgb(100, 21, 255);
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
